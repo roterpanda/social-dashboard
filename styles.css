@@ -1,0 +1,18 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+#full-width {
+  background-color: hsl(225, 100%, 98%);
+  position: absolute;
+  z-index: -1;
+  height: 200px;
+  width: 100%;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+#mainContainer {
+  max-width: 375px;
+  margin: 0 auto;
+}
