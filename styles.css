@@ -1,18 +1,237 @@
-body {
-  font-family: "Inter", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-#full-width {
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: hsl(230, 17%, 14%);
+}
+
+#mainContainer header {
   background-color: hsl(225, 100%, 98%);
-  position: absolute;
+
+  padding: 25px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   z-index: -1;
-  height: 200px;
-  width: 100%;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
 }
 
 #mainContainer {
   max-width: 375px;
   margin: 0 auto;
+}
+
+#title {
+  border-bottom: black 1px solid;
+}
+
+#title p {
+  font-weight: 700;
+  color: hsl(228, 12%, 44%);
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+#dark-mode-setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+#dark-mode-setting label {
+  font-weight: 700;
+  color: hsl(228, 12%, 44%);
+}
+
+#dark-mode-switch {
+  border-radius: 25px;
+  width: 35px;
+  outline: none;
+  appearance: none;
+  background: hsl(230, 22%, 74%);
+
+  padding: 5px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type="range"]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type="range"]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+#dark-mode-switch::-moz-range-thumb {
+  border: 0;
+  background: hsl(225, 100%, 98%);
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#dark-mode-switch::-webkit-slider-thumb {
+  border: 0;
+  background: hsl(225, 100%, 98%);
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#dark-mode-switch::-ms-thumb {
+  border: 0;
+  background: hsl(225, 100%, 98%);
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#headlineStats {
+  margin-top: -25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 85%;
+  border-radius: 3px;
+  background: hsl(227, 47%, 96%);
+  padding: 5px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+#fb {
+  border-top: 4px solid hsl(208, 92%, 53%);
+}
+
+#twitter {
+  border-top: 4px solid hsl(203, 89%, 53%);
+}
+
+#insta .gradient {
+  width: 125%;
+  height: 4px;
+  background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: -5px;
+}
+
+#youtube {
+  border-top: 4px solid hsl(348, 97%, 39%);
+}
+
+.profile {
+  color: hsl(228, 12%, 44%);
+  font-size: small;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.profile > svg {
+  margin-right: 10px;
+}
+
+.headlineNums {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.headlineNums h1 {
+  font-size: 3.5em;
+}
+
+.headlineNums p {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: hsl(228, 12%, 44%);
+  opacity: 85%;
+}
+
+.growth {
+  color: hsl(163, 72%, 41%);
+}
+
+.decline {
+  color: hsl(356, 69%, 56%);
+}
+
+.numChanges {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.numChanges svg {
+  margin-right: 5px;
+}
+
+.numChanges span {
+  font-weight: 700;
+  font-size: small;
+}
+
+#todayStats {
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row1,
+.row2 {
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.row2 .numChanges {
+  display: block;
+}
+
+.number-small {
+  font-size: 2rem;
+  font-weight: 700;
 }
