@@ -130,6 +130,10 @@ input[type="range"]::-ms-track {
   overflow: hidden;
 }
 
+.card:focus {
+  filter: brightness(90%);
+}
+
 #fb {
   border-top: 4px solid hsl(208, 92%, 53%);
 }
@@ -225,6 +229,11 @@ input[type="range"]::-ms-track {
   align-items: center;
 }
 
+.card-text {
+  color: hsl(228, 12%, 44%);
+  font-weight: 700;
+}
+
 .row1,
 .row2 {
   padding: 15px 0px;
@@ -246,4 +255,44 @@ input[type="range"]::-ms-track {
 .number-small {
   font-size: 2rem;
   font-weight: 700;
+}
+
+/* DARK MODE */
+
+#mainContainer.dark {
+  background: hsl(230, 17%, 14%);
+}
+
+#mainContainer.dark header {
+  background: hsl(232, 19%, 15%);
+}
+
+#mainContainer.dark .card {
+  background: hsl(228, 28%, 20%);
+}
+
+#mainContainer.dark .card:focus {
+  filter: brightness(120%);
+}
+
+#mainContainer.dark h1,
+#mainContainer.dark h2,
+#mainContainer.dark .number-small {
+  color: hsl(0, 0%, 100%);
+}
+
+#mainContainer.dark #dark-mode-switch {
+  background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+/*Desktop styles*/
+
+@media only screen and (min-width: 960px) {
+  #mainContainer {
+    max-width: 1440px;
+  }
+
+  #headlineStats {
+    flex-direction: row;
+  }
 }
