@@ -213,6 +213,12 @@ input[type="range"]::-ms-track {
   width: 100%;
 }
 
+#todayStats h2 {
+  width: 85%;
+  color: hsl(228, 12%, 44%);
+  margin: 15px auto;
+}
+
 .cards {
   display: flex;
   flex-direction: column;
@@ -221,14 +227,20 @@ input[type="range"]::-ms-track {
 
 .row1,
 .row2 {
-  padding: 15px 25px;
+  padding: 15px 0px;
+
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 85%;
+}
+
+.row2 {
+  align-items: flex-end;
 }
 
 .row2 .numChanges {
-  display: block;
+  height: 100%;
+  margin-bottom: 5px;
 }
 
 .number-small {
