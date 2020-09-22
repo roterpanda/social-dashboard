@@ -134,6 +134,10 @@ input[type="range"]::-ms-track {
   filter: brightness(90%);
 }
 
+.card:hover {
+  filter: brightness(90%);
+}
+
 #fb {
   border-top: 4px solid hsl(208, 92%, 53%);
 }
@@ -275,6 +279,10 @@ input[type="range"]::-ms-track {
   filter: brightness(120%);
 }
 
+#mainContainer.dark .card:hover {
+  filter: brightness(120%);
+}
+
 #mainContainer.dark h1,
 #mainContainer.dark h2,
 #mainContainer.dark .number-small {
@@ -289,7 +297,7 @@ input[type="range"]::-ms-track {
 
 @media only screen and (min-width: 960px) {
   #mainContainer {
-    max-width: 1200px;
+    max-width: 1440px;
   }
 
   #mainContainer header {
