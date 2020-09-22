@@ -289,10 +289,41 @@ input[type="range"]::-ms-track {
 
 @media only screen and (min-width: 960px) {
   #mainContainer {
-    max-width: 1440px;
+    max-width: 1200px;
+  }
+
+  #mainContainer header {
+    display: flex;
+    justify-content: space-between;
   }
 
   #headlineStats {
     flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  #headlineStats .card {
+    max-width: 20%;
+  }
+
+  .cards {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .cards .card {
+    max-width: 20%;
+  }
+
+  #title {
+    border: 0;
+  }
+
+  #dark-mode-setting label {
+    margin-right: 15px;
+  }
+  #todayStats h2 {
+    width: 95%;
   }
 }
